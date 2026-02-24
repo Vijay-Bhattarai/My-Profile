@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
+    <title>About Me — Bijay Bhattarai</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+    <canvas id="particle-canvas"></canvas>
+
     <div class="container">
         <div class="navbar">
             <div class="menu">
-                <h3 class="logo">Vijay<span>Bhattarai</span></h3>
+                <h3 class="logo">Bijay<span>Bhattarai</span></h3>
                 <div class="hamburger-menu">
                     <div class="bar"></div>
                 </div>
@@ -23,46 +23,90 @@
             <div class="main">
                 <header>
                     <div class="overlay">
-                        <div class="inner">
-                            <h1 class="title">A Little About Me </h1>
-                            <p>
-                                I am a Software Engineer and Ai enthusiast .Right Now I ma Working in different
-                                progarmming language and scripting language and their framework. I use most of React js
-                                as frontend and Nodejs and python for backend in web development.And learning more
-                                things About Ai development.
+                        <div class="inner about-inner">
+                            <h1 class="title">About <span class="highlight">Me</span></h1>
+                            <p class="about-summary">
+                                Tech & Digital Professional with <strong>6 years in tech</strong> and <strong>2+ years in digital marketing</strong>, specializing in web development, CRM optimization, digital strategy, and brand growth. Former <strong>Co-Founder & Sales Manager</strong> at Seto Pixel. Currently advancing toward an <strong>AI Engineer</strong> career path with Python, AI projects, and automation.
                             </p>
+
+                            <div class="experience-timeline">
+                                <div class="exp-item">
+                                    <div class="exp-dot"></div>
+                                    <div class="exp-content">
+                                        <div class="exp-header">
+                                            <h3>Co-Founder & Sales Manager</h3>
+                                            <span class="exp-date">Apr 2025 – Jan 2026</span>
+                                        </div>
+                                        <p class="exp-company">🏢 Seto Pixel, Kathmandu</p>
+                                        <p class="exp-desc">Co-founded the company, led sales & client acquisition, managed CRM systems, hiring, onboarding, and worked on in-house CRM platforms and automation tools.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-dot"></div>
+                                    <div class="exp-content">
+                                        <div class="exp-header">
+                                            <h3>Digital Marketing & CRM Specialist</h3>
+                                            <span class="exp-date">Jul 2024 – Feb 2025</span>
+                                        </div>
+                                        <p class="exp-company">🏢 CodAvatar (KrispCall), Kathmandu/Singapore</p>
+                                        <p class="exp-desc">Managed email campaigns via SendGrid & ConvertKit, handled reputation management across G2 & Trustpilot, and optimized 100+ CRM platforms.</p>
+                                    </div>
+                                </div>
+                                <div class="exp-item">
+                                    <div class="exp-dot"></div>
+                                    <div class="exp-content">
+                                        <div class="exp-header">
+                                            <h3>Junior Frontend Developer</h3>
+                                            <span class="exp-date">Nov 2022 – Mar 2023</span>
+                                        </div>
+                                        <p class="exp-company">🏢 Hunchha Digital Agency, Itahari, Nepal</p>
+                                        <p class="exp-desc">Built responsive UIs with React.js, backend APIs with Node.js, and designed wireframes & user flows in an agile team environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-section">
+                                <h2 class="skills-title">Core Skills</h2>
+                                <div class="skills-grid">
+                                    <div class="skill-chip">React.js</div>
+                                    <div class="skill-chip">Python</div>
+                                    <div class="skill-chip">Node.js</div>
+                                    <div class="skill-chip">Django</div>
+                                    <div class="skill-chip">Laravel / PHP</div>
+                                    <div class="skill-chip">Firebase</div>
+                                    <div class="skill-chip">MySQL</div>
+                                    <div class="skill-chip">Git & GitHub</div>
+                                    <div class="skill-chip">CRM Automation</div>
+                                    <div class="skill-chip">Email Marketing</div>
+                                    <div class="skill-chip">UI/UX Design</div>
+                                    <div class="skill-chip">WordPress</div>
+                                </div>
+                            </div>
+
+                            <div class="edu-section">
+                                <h2 class="skills-title">Education</h2>
+                                <p class="edu-item">🎓 <strong>BCA</strong> — Tribhuvan University, Nepal &nbsp;|&nbsp; CGPA: 3.03/4.0 &nbsp;|&nbsp; 2018–2023</p>
+                            </div>
                         </div>
                     </div>
                 </header>
             </div>
-
             <div class="shadow one"></div>
             <div class="shadow two"></div>
         </div>
 
         <div class="links">
             <ul>
-                <li>
-                    <a href="index.html" style="--i: 0.05s;">Home</a>
-                </li>
-
-                <li>
-                    <a href="./services.html" style="--i: 0.15s;">Services</a>
-                </li>
-                <li>
-                    <a href="./Portfilo.html" style="--i: 0.15s;">Portfilo</a>
-                </li>
-                <li>
-                    <a href="./aboutme.html" style="--i: 0.25s;">About Me</a>
-                </li>
-                <li>
-                    <a href="./Contactme.html" style="--i: 0.3s;">Contact</a>
-                </li>
+                <li><a href="index.html" style="--i: 0.05s;">Home</a></li>
+                <li><a href="./services.html" style="--i: 0.15s;">Services</a></li>
+                <li><a href="./Portfilo.html" style="--i: 0.15s;">Portfolio</a></li>
+                <li><a href="./aboutme.html" style="--i: 0.25s;">About Me</a></li>
+                <li><a href="./Contactme.html" style="--i: 0.3s;">Contact</a></li>
             </ul>
         </div>
     </div>
 
     <script src="app.js"></script>
+    <script src="particles.js"></script>
 </body>
-
 </html>
